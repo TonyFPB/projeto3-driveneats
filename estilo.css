@@ -39,14 +39,20 @@ h1{
 }
 
 .container{
-    margin-top: 92px;
+    background-color: purple;
+    margin: 92px 0px;
+    width: 414px;;
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .categoria{
     display: flex;
     flex-direction: column;
-    height: 258px;
+    /*height: 258px;*/
+    
+    width: inherit;
     background-color: aqua;
     margin-left: 19px;
     margin-top: 30px; 
@@ -54,13 +60,15 @@ h1{
 .categoria>h1{
     font-size: 26px;
     color: #333333;
-    width: 250px;
+    width: 320px;
 }
 .comidas{
-    height: 216px;
+    
     background-color: yellow;
     display: flex;
+    height: 216px;
     overflow-x: scroll;
+    
 }
 .food{
     background-color: darkorange;
@@ -71,6 +79,7 @@ h1{
     align-items: center;
     justify-content:space-around;
     font-family: 'Roboto', sans-serif;
+    border-radius: 9px;
 }
 
 .food>img{
@@ -95,4 +104,32 @@ h1{
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+
+.bot{
+    background-color: chartreuse;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.bot>div{
+    font-family: 'Roboto', sans-serif;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    
+}
+.bot>p{
+    font-size: 20px;
+    font-weight: 400;
 }
