@@ -12,6 +12,7 @@ h1{
     font-family: 'Righteous', cursive;
 }
 .header{
+    z-index: 1;
     background-color:#CF2B2B ;
     width: 414px;
     height: 92px;
@@ -129,7 +130,6 @@ h1{
 }
 .bot>div{
     font-family: 'Roboto', sans-serif;
-    background-color: #CBCBCB;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,15 +137,30 @@ h1{
     width: 364px;
     height: 61px;
     border-radius: 50px;
-    
 }
-.bot>p{
+.linkar{
+    text-decoration: none;
+}
+.paragrafo p{
     font-size: 20px;
     font-weight: 400;
+    color: white;
+}
+.paragrafo{
+    width: 200px;
+    display: flex;
+    word-wrap: break-word;
+    justify-content:center ;
 }
 .borda-verde{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 .aparece{
     display: block;
+}
+.fundo-verde{
+    background-color:#32B72F ;
+}
+.fundo-cinza{
+    background-color: #CBCBCB;
 }
