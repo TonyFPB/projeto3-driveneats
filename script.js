@@ -65,16 +65,9 @@ function ligarFinal(){
 
         let texto=`Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20${pegandoInfo()[0][0]}%0A-%20Bebida:%20${pegandoInfo()[1][0]}%0A-%20Sobremesa:%20${pegandoInfo()[2][0]}%0ATotal:%20R$%20${Total}`
         const linkando=document.querySelector('.linkar')
-        linkando.href='https://wa.me/5521996012589?text='+texto
+        linkando.href='https://wa.me/5521998320863?text='+texto
 
     }
 }
 
 
-/*Olá, gostaria de fazer o pedido:
-- Prato: Frango Yin Yang
-- Bebida: Coquinha Gelada
-- Sobremesa: Pudim
-Total: R$ 27.70 
-Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda
-*/
