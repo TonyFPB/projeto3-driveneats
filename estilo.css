@@ -41,7 +41,7 @@ h1{
 .container{
     
     margin: 92px 0px;
-    width: 414px;;
+    width: 414px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -54,10 +54,11 @@ h1{
     
     width: inherit;
     
-    margin-left: 19px;
+    
     margin-top: 30px; 
 }
 .categoria>h1{
+    margin-left: 19px;
     font-size: 26px;
     color: #333333;
     width: 320px;
@@ -70,19 +71,16 @@ h1{
 }
 .food{
     width: 172px;
-    margin-right: 16px;
+    margin-left: 19px;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
     font-family: 'Roboto', sans-serif;
     border-radius: 9px;
     overflow-wrap: break-word;
-    
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    position: relative;
 }
-.comando{
-    box-shadow: inset 0px 0px 0px 5px #32B72F;
-}
+
 .food img{
     margin:0px 12px;
     width: 144px;
@@ -109,6 +107,13 @@ h1{
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+.icone{
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #32B72F;
 }
 
 .bot{
@@ -137,4 +142,10 @@ h1{
 .bot>p{
     font-size: 20px;
     font-weight: 400;
+}
+.borda-verde{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.aparece{
+    display: block;
 }

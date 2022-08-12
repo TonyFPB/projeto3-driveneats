@@ -14,57 +14,61 @@
         <p>Sua comida em 6 minutos</p>
     </div>
     <div class="container">
-        <div class="categoria">
+        <div class="categoria comida">
             <h1>Primeiro, Prato</h1>
             <div class="comidas">
-                <div class="food">
+                <div class="food pf" onclick="liga('.comida .pf')"><!--(.comida .pf .icone)-->
                    <img src="img-eats/pf.jpg" />
                     <h2>Almoço Executivo</h2>
                     <h3>Arroz,Feijao, Linguiça,Ovo,Salada</h3>
                     <p>R$17,50</p>
+                    <ion-icon class="icone" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="food">
+                <div class="food acaraje" onclick="liga('.comida .acaraje')">
                     <img src="img-eats/acaraje.jpg" />
                      <h2>Acacajé</h2>
                      <h3>Vatapá,Camarão,Pimenta</h3>
                      <p>R$6,00</p>
+                     <ion-icon class="icone" name="checkmark-circle"></ion-icon>
                  </div>
-                 <div class="food">
+                 <div class="food falafel" onclick="liga('.comida .falafel')">
                     <img src="img-eats/falafel.jpg" />
                      <h2>Falafel Vegetariano</h2>
                      <h3>Falafel de Grão de Bico</h3>
                      <p>R$13,00</p>
+                     <ion-icon class="icone" name="checkmark-circle"></ion-icon>
                  </div>
-                 <div class="food">
+                 <div class="food lasanha" onclick="liga('.comida .lasanha')">
                     <img src="img-eats/Lasanha.jpg" />
                      <h2>Lasanha</h2>
                      <h3>Lasanha à bolonhesa</h3>
                      <p>R$15,00</p>
+                     <ion-icon class="icone" name="checkmark-circle"></ion-icon>
                  </div>
             </div>
         </div>
-        <div class="categoria">
+        <div class="categoria bebida">
             <h1>Agora, sua bebida</h1>
             <div class="comidas">
-                <div class="food">
+                <div class="food coca" onclick="liga('.bebida .coca')">
                    <img src="img-eats/coca.jpg" />
                     <h2>Coca</h2>
                     <h3>Lata 350ml</h3>
                     <p>R$5,00</p>
                 </div>
-                <div class="food">
+                <div class="food mate" onclick="liga('.bebida .mate')">
                     <img src="img-eats/matao.jpg" />
                      <h2>Mate</h2>
                      <h3>Copo 300ml</h3>
                      <p>R$5,00</p>
                  </div>
-                 <div class="food">
+                 <div class="food agua" onclick="liga('.bebida .agua')">
                     <img src="img-eats/agua1.jpg" />
                      <h2>Água Mineral</h2>
                      <h3>Agua sem gás 800ml</h3>
                      <p>R$2,50</p>
                  </div>
-                 <div class="food">
+                 <div class="food suco" onclick="liga('.bebida .suco')">
                     <img src="img-eats/suco1.jpg" />
                      <h2>Suco de Laranja</h2>
                      <h3>Garrafa 500ml</h3>
@@ -72,28 +76,28 @@
                  </div>
             </div>
         </div>
-        <div class="categoria">
+        <div class="categoria sobremesa">
             <h1>Agora, sua sobremesa</h1>
             <div class="comidas">
-                <div class="food">
+                <div class="food banoffee" onclick="liga('.sobremesa .banoffee')">
                     <img src="img-eats/banoffee.jpg" />
                     <h2>Torta de Banoffee</h2>
                     <h3>Torta de banana</h3>
                     <p>R$100,00</p>
                 </div>
-                <div class="food">
+                <div class="food brownie" onclick="liga('.sobremesa .brownie')">
                      <img src="img-eats/brownie.jpg" />
                      <h2>Brownie</h2>
                      <h3>Famoso brownie de chocolate</h3>
                      <p>R$5,50</p>
                  </div>
-                 <div class="food">
+                 <div class="food tiramisu" onclick="liga('.sobremesa .tiramisu')">
                      <img src="img-eats/tiramisu.jpg" />
                      <h2>Tiramisu</h2>
                      <h3>Saborosa sobremesa italiana</h3>
                      <p>R$10,00</p>
                  </div>
-                 <div class="food">
+                 <div class="food pave" onclick="liga('.sobremesa .pave')">
                      <img src="img-eats/pavê.jpg" />
                      <h2>Pavê</h2>
                      <h3>Pavê de Morango</h3>
@@ -108,5 +112,7 @@
             <p>Selecione os 3 itens</p> <p>para fechar o pedido</p>
         </div>
     </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
