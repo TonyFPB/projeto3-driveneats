@@ -50,17 +50,31 @@ function pegandoInfo(){
     const nomeS=document.querySelector('.sobremesa .borda-verde .nomeP')
     const precoS=document.querySelector('.sobremesa .borda-verde .preco')
     if(nomeC!==null && nomeB!==null && nomeS!==null){
+        return[[nomeC.innerHTML,precoC.innerHTML],[nomeB.innerHTML,precoB.innerHTML],[nomeS.innerHTML,precoS.innerHTML]]
+    }    
+}
+function ligarFinal(){
+    if (pegandoInfo() !== undefined){
         const botao=document.querySelector('.teste')
         botao.classList.remove('fundo-cinza')
         botao.classList.add('fundo-verde')
 
         const trocaP=document.querySelector('.final')
         trocaP.innerHTML='Fechar pedido'
-        
+        const Total=transformaN(pegandoInfo()[0][1])+transformaN(pegandoInfo()[1][1])+transformaN(pegandoInfo()[2][1])
+
+        let texto=`Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20${pegandoInfo()[0][0]}%0A-%20Bebida:%20${pegandoInfo()[1][0]}%0A-%20Sobremesa:%20${pegandoInfo()[2][0]}%0ATotal:%20R$%20${Total}`
         const linkando=document.querySelector('.linkar')
-        linkando.href='https://www.google.com/'
-        return[[nomeC.innerHTML,precoC.innerHTML],[nomeB.innerHTML,precoB.innerHTML],[nomeS.innerHTML,precoS.innerHTML]]
-    }    
+        linkando.href='https://wa.me/5521996012589?text='+texto
+
+    }
 }
 
 
+/*Olá, gostaria de fazer o pedido:
+- Prato: Frango Yin Yang
+- Bebida: Coquinha Gelada
+- Sobremesa: Pudim
+Total: R$ 27.70 
+Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda
+*/
