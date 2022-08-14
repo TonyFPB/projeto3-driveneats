@@ -104,7 +104,7 @@ function paginaFinal(){
         Endereco1=endereco.value
         Nome1=nome.value
         ultima_pagina.classList.remove('some')
-        let texto=`Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20${pegandoInfo()[0][0]}%0A-%20Bebida:%20${pegandoInfo()[1][0]}%0A-%20Sobremesa:%20${pegandoInfo()[2][0]}%0ATotal:%20R$%20${transformaS(Total)}%0ANome:%20${Nome1}%0AEndereço:%20${Endereco1}`
+        let texto=`Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20${pegandoInfo()[0][0]}%0A-%20Bebida:%20${pegandoInfo()[1][0]}%0A-%20Sobremesa:%20${pegandoInfo()[2][0]}%0ATotal:%20${transformaS(Total)}%0ANome:%20${Nome1}%0AEndereço:%20${Endereco1}`
         const linkando=document.querySelector('.linkar')
         linkando.href='https://wa.me/5521998320863?text='+texto
     }
