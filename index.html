@@ -116,10 +116,10 @@
         
     </div>
     <div class="bot">
-        <div class="teste fundo-cinza" onclick="botaoFinaliza()">
-            <a class="linkar" target="_blank"><div class="paragrafo">
+        <div class="but fundo-cinza" onclick="">
+            <div class="paragrafo">
                 <p class="final" onclick="janelaEndereco()">Selecione os 3 itens para fechar o pedido</p>
-            </div></a>
+            </div>
         </div>
     </div>
     <div class="Endereco-Nome some">
@@ -133,9 +133,38 @@
                 <input class="ende" type="text">
             </div>
             <div class="botoes-ende">
-            <button class="sim">Confirma</button>
+            <button class="sim" onclick="paginaFinal(), confirmandoTudo()">Confirma</button>
             <button class="nao" onclick="cancela('.Endereco-Nome')">Cancelar</button>
             </div>
+        </div>
+    </div>
+    <div class="confirma-tudo some">
+        <div class="caixinha">
+            <p class="Con-Ped">Confirme seu pedido</p>
+        <div class="com">
+          <p class="C1">Frango</p>
+          <p class="P1">10</p>
+        </div>
+        <div class="beb">
+          <p class="B1">Coca</p>
+          <p class="P2">5</p>
+        </div>
+        <div class="som">
+          <p class="S1">Pave</p>
+          <p class="P3">10</p>
+        </div>
+        <div class="tot">
+          <p class="T1">Total:</p>
+          <p class="P4">60</p>
+        </div>
+        <div>
+            <p class="NomeF"></p>
+            <p class="EndeF"></p>
+        </div>
+        <div class="butao">
+            <a class="linkar" target="_blank"><button class="sim">Tudo certo</button></a>
+            <button class="nao" onclick="cancela('.confirma-tudo')">Cancela</button>
+        </div>
         </div>
     </div>
     <script src="script.js"></script>
