@@ -118,8 +118,24 @@
     <div class="bot">
         <div class="teste fundo-cinza" onclick="botaoFinaliza()">
             <a class="linkar" target="_blank"><div class="paragrafo">
-                <p class="final">Selecione os 3 itens para fechar o pedido</p>
+                <p class="final" onclick="janelaEndereco()">Selecione os 3 itens para fechar o pedido</p>
             </div></a>
+        </div>
+    </div>
+    <div class="Endereco-Nome some">
+        <div class="caixinha">
+            <div>
+                <p>Nome:</p>
+                <input class="nomepessoa" type="text">
+            </div>
+            <div>
+                <p>Endereço:</p>
+                <input class="ende" type="text">
+            </div>
+            <div class="botoes-ende">
+            <button class="sim">Confirma</button>
+            <button class="nao" onclick="cancela('.Endereco-Nome')">Cancelar</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

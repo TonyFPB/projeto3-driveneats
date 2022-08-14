@@ -62,12 +62,22 @@ function ligarFinal(){
         const trocaP=document.querySelector('.final')
         trocaP.innerHTML='Fechar pedido'
         const Total=transformaN(pegandoInfo()[0][1])+transformaN(pegandoInfo()[1][1])+transformaN(pegandoInfo()[2][1])
-
+        /*
         let texto=`Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20${pegandoInfo()[0][0]}%0A-%20Bebida:%20${pegandoInfo()[1][0]}%0A-%20Sobremesa:%20${pegandoInfo()[2][0]}%0ATotal:%20R$%20${Total}`
         const linkando=document.querySelector('.linkar')
         linkando.href='https://wa.me/5521998320863?text='+texto
-
+        */
     }
+}
+function janelaEndereco(){
+    if(pegandoInfo() !== undefined){
+        const en=document.querySelector('.Endereco-Nome')
+        en.classList.remove('some')
+    }
+}
+function cancela(seletor){
+    const doc=document.querySelector(seletor)
+    doc.classList.add('some')
 }
 
 
