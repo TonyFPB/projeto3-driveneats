@@ -82,6 +82,7 @@ function ligarFinal(){
         Total=transformaN(pegandoInfo()[0][1])+transformaN(pegandoInfo()[1][1])+transformaN(pegandoInfo()[2][1])
     }
 }
+
 function janelaEndereco(){
     if(pegandoInfo() !== undefined){
         const en=document.querySelector('.Endereco-Nome')
